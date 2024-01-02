@@ -26,7 +26,8 @@ body {
 }
 
 header {
-    background: var(--gray-800);
+    position: fixed;
+    background: transparent;
     width: 100%;
     padding: 1rem 1.5rem;
 
@@ -44,7 +45,7 @@ header nav {
     font-weight: bold;
 
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 header nav a {
@@ -60,7 +61,7 @@ header nav a:hover {
 
 #home {
     background: var(--gray-800);
-    height: 50vh;
+    height: 100vh;
     width: 100%;
 
     display: flex;
@@ -106,4 +107,37 @@ header nav a:hover {
     background: var(--green-700);
     transform: scale(1.1);
     transition: 0.5s;
+}
+
+#aboutMe {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutMe h2 {
+    color: var(--white);
+    font-size: 3.2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#aboutMe .aboutMeInfo {
+    padding: 0 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.aboutMeInfo img {
+    height: 50vh;
+    border-radius: 15px;
+}
+
+.aboutMeInfo p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.2;
 }
