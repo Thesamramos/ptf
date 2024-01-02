@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap');
 
 :root {
+    --white: #fff;
+
     --gray-300: #C4C4CC;
     --gray-800: #202024;
     --gray-900: #121214;
@@ -33,6 +35,10 @@ header {
     justify-content: space-between;
 }
 
+header h2 {
+    font-size: 2rem;
+}
+
 header nav {
     font-size: 1.2rem;
     font-weight: bold;
@@ -50,4 +56,54 @@ header nav a {
 
 header nav a:hover {
     border-bottom: 3px solid var(--green-300);
+}
+
+#home {
+    background: var(--gray-800);
+    height: 50vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#home h1 {
+    font-size: 4.5rem;
+    letter-spacing: 0.3rem;
+    color: var(--white);
+}
+
+#home span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+
+#home .linkMedias {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+#home .linkMedias a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    background: var(--green-300);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+
+    transition: 0.5s;
+}
+
+#home .linkMedias a:hover {
+    background: var(--green-700);
+    transform: scale(1.1);
+    transition: 0.5s;
 }
