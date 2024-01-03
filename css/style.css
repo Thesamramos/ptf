@@ -40,7 +40,7 @@ header h2 {
     font-size: 2rem;
 }
 
-header nav {
+nav {
     font-size: 1.2rem;
     font-weight: bold;
 
@@ -61,6 +61,7 @@ header nav a:hover {
 
 section {
     height: 100vh;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -140,6 +141,37 @@ section h2 {
     line-height: 1.2;
 }
 
+.aboutMeInfo .aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.aboutMeInfo .skills {
+    width: 100%;
+    background: var(--green-700);
+    border-radius: 15px;
+    padding: 1rem;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.aboutMeInfo .skills .skillsIcons {
+    display: flex;
+    gap: 2rem;
+}
+
+.aboutMeInfo .skills .skillsIcons img {
+    height: 3.75rem;
+}
+
 #projects {
     background: var(--gray-800);
 }
@@ -156,6 +188,42 @@ section h2 {
 }
 
 .cardContainer .card img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    padding: 1.5rem 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .linkMediasFooter {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .footerInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+footer .footerInfo p {
+    font-weight: bold;
+    color: var(--green-500);
+}
+
+footer .footerInfo span {
+    color: var(--gray-300);
+}
+
+footer .linkMediasFooter img {
+    height: 2rem;
+}
+
+footer .linkMediasFooter img:hover {
     transform: scale(1.1);
 }
 
