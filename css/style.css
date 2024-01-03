@@ -26,7 +26,6 @@ body {
 }
 
 header {
-    position: fixed;
     background: transparent;
     width: 100%;
     padding: 1rem 1.5rem;
@@ -232,3 +231,53 @@ footer .linkMediasFooter img:hover {
     transform: scale(1.1);
 }
 
+@media  (max-width: 480px) {
+    header {
+        display: none;
+    }
+
+    #home {
+        text-align: center;
+    }
+
+    #home h1 {
+        font-size: 3rem;
+    }
+
+    #projects, #aboutMe {
+        height: 100%;
+    }
+
+    .aboutMeInfo {
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+    }
+
+    .aboutMeInfo .profile {
+        width: 95vw;
+        height: 40vh;
+    }
+
+    .aboutMeInfo p {
+        text-align: center;
+    }
+
+    .aboutMeInfo .skillsIcons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cardContainer {
+        margin-bottom: 2rem;
+    }
+
+    .cardContainer .card img {
+        width: 20rem;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}
